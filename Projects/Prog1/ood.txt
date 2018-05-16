@@ -1,0 +1,31 @@
+1. The attributes of the dlist class include: a struct for NodeType, 5 void functions, 
+   2 boolean functions, and an INT functions. Templates are used to make writing the 
+   code easier. Instead of having to write each specification separately, you can
+   make just one template and use it over and over again. 
+
+2. -dlist deconstructor: deallocated all memory of the list.
+   -makeEmpty: empties the list and deallocates memory. 
+   -deleteItem: Searches for the item we want to delete, if found it deletes the item.
+   -inList: Boolean function that returns true if the item we are looking for is in the 
+ 	    list and false if it not.
+   -isEmpty: Boolean function that returns true if the list is empty and false if it isn't.
+   -print: prints all current items in the list.
+   -insertHead: Adds an item to the front of the list and links the old front to the new 
+		front using a double link. The length of the list is also incremented by 1.
+   -appendTail: Adds an item to the back of the list and links the old back to the new back
+		using a double link. Also increments the length of the list by 1. 
+   -lengthIs: returns the current length of the list, the length tells us how many items are
+ 	      in the list.
+   -last: returns the location(address) of the current last item in the list. If it does not
+	  find anything it will return NULL.
+   -deleteLocation: The location that is passed it removed from the list and deallocated. Also decrements the
+		    list length by one.
+
+3. The move to front algorithm is made to move all the frequently accessed items at the top 
+   of the list and the least frequent at the bottom.
+
+4. The main algorithm basically takes any node accessed and immediately to the front. By doing
+   this, eventually all the most common items will stay at the top of the list and the non-frequent
+   items at the bottom. This reduces the search time for the most common items becuase it is assumed
+   the items at the top are what you will most likely try to access according to how often you access
+   that item. 

@@ -1,0 +1,6 @@
+3 paragraphs
+1 - BST class is used to insert and remove items, make the tree empty, find the minimum and maximum values in a tree, find a certain key in a tree, and to print a tree.
+    dictionary class is a covering over a hashtable class to make it more user friendly. The Hash Table class is used to create a hash table, empty a hash table, insert and remove into/from a hash table, and check to see if a number is prime. The Linked List class is used to create a linked list, check to see if a list is empty, make a list empty, find the first item in a list, and to find the previous item of an item. The dictionary will be size 1000.
+2 -
+3 - To check for suggested first you have to check for an out of place letter, go to the next to last letter and keep swapping adjacent letters till you get a real word by
+    comparing it to the dictionary. how am I going to check for suggested spellings?
